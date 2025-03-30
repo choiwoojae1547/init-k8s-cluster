@@ -19,7 +19,7 @@ systemctl enable containerd
 # 4. Kubernetes 패키지 설치
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 cat <<EOF | tee /etc/apt/sources.list.d/kubernetes.list
-deb https://apt.kubernetes.io/ kubernetes-xenial main
+deb https://apt.kubernetes.io/ kubernetes-stable main
 EOF
 apt update -y
 apt install -y kubelet kubeadm kubectl
